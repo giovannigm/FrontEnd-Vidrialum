@@ -1,0 +1,102 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  margin: 0% 0% 5%;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 100%;
+  padding: 15px;
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+  font-size: 30px;
+  display: flex;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -34px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .Facebook:hover,
+.wrapper .Facebook:hover .tooltip,
+.wrapper .Facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .Instagram:hover,
+.wrapper .Instagram:hover .tooltip,
+.wrapper .Instagram:hover .tooltip::before {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: #ffffff;
+}
+
+.wrapper .Whatsapp:hover,
+.wrapper .Whatsapp:hover .tooltip,
+.wrapper .Whatsapp:hover .tooltip::before {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.wrapper .Gmail:hover,
+.wrapper .Gmail:hover .tooltip,
+.wrapper .Gmail:hover .tooltip::before {
+  background: #ea4335;
+  color: #ffffff;
+}
+
+.bx {
+  line-height: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 100%;
+    padding: 15px;
+    margin: 10px;
+    width: 5px;
+    height: 5px;
+    font-size: 23px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    align-items: center;
+    justify-content: center;
+  }
+}

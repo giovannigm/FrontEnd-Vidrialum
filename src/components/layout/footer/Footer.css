@@ -1,0 +1,149 @@
+/* Footer
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  align-items: center;
+}
+
+.content-foo {
+  text-align: center;
+  justify-content: center;
+}
+
+.content-foo h4 {
+  border-bottom: 3px solid #27ae60;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo img.logo-vidrialum {
+  height: 250px;
+  width: 280px;
+  margin: auto;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+@media screen and (max-width: 900px) {
+  .contenedor-footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contenedor-footer {
+    align-content: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .content-foo h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+} */
+
+.contact-container {
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: flex-end;
+  padding-top: 40px;
+  gap: 1rem;
+}
+
+.information-contact {
+  width: 40%;
+}
+
+.information-contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 105%;
+}
+
+/* .email-contact {
+  width: 40%;
+} */
+
+.text-contact {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 1rem; */
+}
+
+.container-phone img {
+  padding-right: 5px;
+}
+
+.container-phone {
+  display: flex;
+  align-items: center;
+}
+
+body.dark .information-contact p,
+body.dark .information-contact a,
+body.dark .text-contact p {
+  color: #cbcaca;
+}
+body.dark .information-contact h4 {
+  color: #db9515;
+}
+
+.img-container {
+  text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+  .contact-container {
+    /* height: 95vh; */
+    /* padding-top: 45px; */
+    display: block;
+    padding-left: 4%;
+  }
+
+  .information-contact {
+    width: 90vw;
+  }
+
+  .email-contact {
+    width: 90vw;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .email-contact {
+    float: none;
+  }
+}

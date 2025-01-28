@@ -1,0 +1,242 @@
+/* Header
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    transition: .5s ease;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 70px;
+  }
+  
+  .header {
+    display: flex;
+    background-color: rgba(43, 255, 0, 0);
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    position: fixed;
+    padding: 10px;
+    transition: 0.2s ease;
+    z-index: 2;
+    color: #fff;
+  }
+  
+  .header a:hover {
+    font-size: 20px;
+  }
+  
+  .header_2 {
+    background-color: rgba(8, 82, 8, 0.5);
+    transition: 0.2s ease;
+  }
+  
+  .menu-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn-header {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.2s ease;
+  }
+  
+  svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    margin-right: 10px;
+  }
+  
+  .inicio h1 {
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .inicio h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .inicio {
+    height: 100vh;
+    background-image: url('/assets/img/ventana-mdeo.jpg');
+    background-color: rgb(50, 50, 50);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .button {
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    margin-top: 18px;
+    border-radius: 50px;
+    animation: shadow-pulse 1s infinite;
+    text-transform: uppercase;
+  }
+  
+  .button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: 1s ease;
+  }
+  
+  .wave {
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .header {
+      justify-content: space-around;
+    }
+  
+    #menu_bar {
+      display: flex;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .menu_hamburger {
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      display: block;
+      position: absolute;
+      background-color: #fff;
+      transition: 0.75s ease;
+      transform-origin: 0px 100%;
+    }
+  
+    .menu_hamburger:nth-child(2) {
+      top: calc(50% - 2px);
+    }
+  
+    .menu_hamburger:nth-child(3) {
+      bottom: 0;
+    }
+  
+    .visible_menu .menu_hamburger:nth-child(1) {
+      transform: rotate(45deg) translate(-2px, 1px);
+    }
+  
+    .visible_menu .menu_hamburger:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .visible_menu .menu_hamburger:nth-child(3) {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+  
+    .nav {
+      margin-top: 60px;
+      top: -100%;
+      position: fixed;
+      align-items: center;
+      flex-direction: column;
+      justify-content: end;
+      width: 100%;
+      background-color: rgb(128, 128, 128);
+    }
+  
+    .visible_menu .header {
+      background-color: white;
+    }
+  
+    .visible_menu .menu_hamburger {
+      background-color: #FE5313;
+      transition: 1s ease;
+    }
+  
+    .nav {
+      opacity: 0;
+      transition: 0.55s ease;
+    }
+  
+    .visible_menu .nav {
+      top: 0;
+      opacity: 1;
+      background: white;
+      -webkit-box-shadow: 0 8px 80px -8px rgb(255, 255, 255);
+      -moz-box-shadow: 0 80px 8px -8px rgb(255, 255, 255);
+      box-shadow: 0 8px 80px -8px rgb(255, 255, 255);
+      color: #FE5313;
+    }
+  
+    .btn-header {
+      color: #FE5313;
+      transition: 1s ease;
+    }
+  
+    .visible_menu .logo {
+      color: #FE5313;
+      transition: 1s ease;
+    }
+  }
+   */
+
+.Home {
+  height: calc(100vh);
+  background-image: url(/src/assets/ventana-mdeo.jpg);
+  background-color: rgb(50, 50, 50);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10rem;
+
+  h1 {
+    font-size: 26px;
+    color: #fff;
+  }
+}
+
+.wave {
+  height: 25vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 828px) {
+  .Home {
+    height: calc(100vh - 10vh);
+  }
+}
