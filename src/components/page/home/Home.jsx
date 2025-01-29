@@ -1,3 +1,4 @@
+import ServiciosContainer from "../../common/servicios/ServiciosContainer";
 import Footer from "../../layout/footer/Footer";
 import NavBar from "../../layout/navBar/NavBar";
 import "./Home.css";
@@ -24,6 +25,7 @@ const Home = () => {
           </svg>
         </div>
       </section>
+      <ServiciosContainer />
       <Footer />
     </>
   );
