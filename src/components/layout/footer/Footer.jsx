@@ -1,8 +1,6 @@
-// import Social from "../../common/IconSocial/Social";
-// import FormEmail from "../../common/FormEmail/FormEmail";
 import imgFlag from "../../../assets/Flag-uruguay.png";
 import Social from "../../common/social/Social";
-import "./Footer.css";
+import "./Footer.scss";
 import imgEmpresa from "../../../assets/Logo.png";
 
 const Footer = () => {
@@ -66,8 +64,8 @@ const Footer = () => {
             ></iframe> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.193371488166!2d-56.046771510139806!3d-34.775906972088265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a028f3315a4079%3A0x8a2c35373ede2234!2sVidrialum!5e0!3m2!1ses!2suy!4v1737610917347!5m2!1ses!2suy"
-            width="200"
-            height="200"
+            width="350"
+            height="350"
             style={{ border: 0 }}
             allowFullScreen=""
             title="Vidrialum Location"

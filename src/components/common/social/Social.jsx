@@ -1,4 +1,4 @@
-import "./Social.css";
+import "./Social.scss";
 import 'boxicons'
 
 const Social = () => {

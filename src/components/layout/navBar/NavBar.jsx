@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import { Link, useNavigate } from "react-router-dom";
 // import ImgLogout from "../../../assets/Logout.png";
 // import { useAuth } from "../../contexts/AuthContext";
-import "./Navbar.css";
+import "./Navbar.scss";
 import imgEmpresa from "../../../assets/Logo.png";
 import { FaPeopleCarryBox } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";

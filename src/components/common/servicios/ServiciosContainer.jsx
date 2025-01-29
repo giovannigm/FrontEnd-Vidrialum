@@ -1,5 +1,5 @@
 import Servicios from "./Servicios";
-import "./Servicios.css";
+import "./Servicios.scss";
 
 const ServiciosContainer = () => {
   return (

@@ -1,7 +1,7 @@
 import ServiciosContainer from "../../common/servicios/ServiciosContainer";
 import Footer from "../../layout/footer/Footer";
 import NavBar from "../../layout/navBar/NavBar";
-import "./Home.css";
+import "./Home.scss";
 
 const Home = () => {
   return (
