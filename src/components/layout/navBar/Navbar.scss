@@ -33,23 +33,23 @@ header {
   display: flex;
   gap: 16px;
   list-style: none;
-}
 
-.list-nav li a {
-  font-family: "open sans";
-  color: white;
-  text-decoration: none;
-  padding: 10px 12px;
-  display: flex;
-  border-radius: 10%;
-  margin: -3% -11%;
-  align-items: center;
-}
+  li a {
+    font-family: "open sans";
+    color: white;
+    text-decoration: none;
+    padding: 3px 12px;
+    display: flex;
+    border-radius: 10%;
+    margin: -3% -11%;
+    align-items: center;
+  }
 
-.list-nav li a:hover {
-  border-bottom: 2px solid white;
-  border-radius: 2%;
-  width: 80%;
+  li a:hover {
+    border-bottom: 2px solid white;
+    border-radius: 2%;
+    width: 80%;
+  }
 }
 
 #menuIcon {
@@ -73,11 +73,6 @@ header {
     background-color: #e6e6e64a;
     height: 600%;
   }
-
-  /* .list-nav li a:hover {
-    border-bottom: 2px solid white;
-    border-radius: 2%;
-  } */
 
   .list-nav.show-menu {
     display: flex;

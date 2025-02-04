@@ -1,12 +1,9 @@
 import ServiciosContainer from "../../common/servicios/ServiciosContainer";
-import Footer from "../../layout/footer/Footer";
-import NavBar from "../../layout/navBar/NavBar";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
       <section className="Home">
         <h1>Bienvenidos a VIDRIALUM</h1>
         {/* <h2>Empresa uruguaya de aperturas en aluminio</h2>  */}
@@ -26,7 +23,6 @@ const Home = () => {
         </div>
       </section>
       <ServiciosContainer />
-      <Footer />
     </>
   );
 };

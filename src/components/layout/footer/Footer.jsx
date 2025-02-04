@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="contact-container">
+      <footer className="footer-container">
         <article className="information-contact">
           <div className="img-container">
             <img
@@ -51,7 +51,6 @@ const Footer = () => {
           {/* <Social /> */}
         </article>
         <aside className="email-contact">
-          {/* <FormEmail /> */}
 
           {/* <div className="google-maps"> */}
           {/* <iframe
