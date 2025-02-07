@@ -19,10 +19,13 @@ const Footer = () => {
             />
           </div>
           <p>
-            I'm always available in my inbox! If you have any questions,
-            exciting ideas or just want to say hello, I'll be happy to listen
-            and respond! Feel free to contact me anytime and I look forward to
-            our conversation!
+            Nos especializamos en la fabricación, instalación y reparación de
+            todo tipo de aberturas y estructuras en aluminio. Contamos con 20
+            años de experiencia en el mercado, ofreciendo soluciones a medida
+            con materiales de alta calidad y un acabado impecable. Brindamos
+            soluciones prácticas y duraderas para hogares, oficinas y comercios.
+            <br />
+            ¡Confía en nuestra experiencia y calidad!
           </p>
           <section className="contact">
             <h3 className="HeaderTitle">Informacion de contacto</h3>
@@ -51,7 +54,6 @@ const Footer = () => {
           {/* <Social /> */}
         </article>
         <aside className="email-contact">
-
           {/* <div className="google-maps"> */}
           {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13108.759916630317!2d-56.046781378538434!3d-34.77599238271203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a028f3315a4079%3A0x8a2c35373ede2234!2sVidrialum!5e0!3m2!1ses-419!2suy!4v1574455048321!5m2!1ses-419!2suy"

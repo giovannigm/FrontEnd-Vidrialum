@@ -12,6 +12,10 @@ const NavBar = () => {
     setShowMenu(!showMenu);
   };
 
+  const handleLinkClick = () => {
+    setShowMenu(false);
+  };
+
   return (
     <header>
       <Link to={"/"} className="tituloNavbar">
@@ -24,22 +28,20 @@ const NavBar = () => {
         </div>
         <ul className={`list-nav ${showMenu ? "show-menu" : ""}`}>
           <li>
-            <Link to={"/"}>
+            <Link to={"/"} onClick={handleLinkClick}>
               <FaHome size={30} /> {/* Es la imagen que aparece alado */}
               Inicio
             </Link>
           </li>
           <li>
-            <a href="#About">
-              <FaPeopleCarryBox size={30} />{" "}
-              {/* Es la imagen que aparece alado */}
+            <a href="#About" onClick={handleLinkClick}>
+              <FaPeopleCarryBox size={30} /> {/* Es la imagen que aparece alado */}
               Nosotros
             </a>
           </li>
           <li>
-            <Link to={"/Contacto"}>
-              <IoChatbubblesOutline size={30} />{" "}
-              {/* Es la imagen que aparece alado */}
+            <Link to={"/Contacto"} onClick={handleLinkClick}>
+              <IoChatbubblesOutline size={30} /> {/* Es la imagen que aparece alado */}
               Contacto
             </Link>
           </li>

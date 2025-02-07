@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import axios from "axios";
 import "./FormEmail.scss";
+import { emailService } from "../../../Api/axiosInstance";
 
 const { VITE_BACKEND } = import.meta.env;
 
@@ -30,11 +30,7 @@ const FormEmail = () => {
     };
 
     try {
-      const response = await axios.post(`${VITE_BACKEND}/email`, data, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await emailService.sendEmail(data);
 
       if (response.status === 200) {
         setSubmitText("Submitted !");
