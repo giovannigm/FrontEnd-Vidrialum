@@ -1,5 +1,7 @@
 import img1 from "../../../assets/Prueba/b.svg";
 import img2 from "../../../assets/Prueba/a.svg";
+// import img3 from "../../../assets/Prueba/a.svg";
+import img4 from "../../../assets/reparacion-mantenimiento.png";
 
 const Servicios = () => {
   return (
@@ -15,7 +17,7 @@ const Servicios = () => {
         </p>
       </div>
       <div className="servicio-ind">
-        <img src={img1} alt="" />
+        <img src={img1} alt="imagen de Fabricación" />
         <h3>Fabricación e instalación</h3>
         <p>
           Diseñamos e instalamos ventanas de aluminio de todo tipo, cortinas de
@@ -24,7 +26,7 @@ const Servicios = () => {
         </p>
       </div>
       <div className="servicio-ind">
-        <img src={img2} alt="" />
+        <img src={img2} alt="imagen de trabajos personalizados" />
         <h3>Trabajos personalizados y decoración</h3>
         <p>
           Fabricamos productos a medida, adaptándonos a las necesidades de cada
@@ -34,7 +36,7 @@ const Servicios = () => {
         </p>
       </div>
       <div className="servicio-ind">
-        <img src={img1} alt="" />
+        <img src={img4} alt="imagen de mantenimiento de ventana" />
         <h3>Reparaciones y mantenimiento</h3>
         <p>
           Ofrecemos mantenimiento y reparación de ventanas de aluminio, cortinas
