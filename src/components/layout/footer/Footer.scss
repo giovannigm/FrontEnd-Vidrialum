@@ -61,6 +61,15 @@ body.dark .information-contact h4 {
 .img-container {
   text-align: center;
 }
+.responsive-iframe {
+  width: 350px;
+  height: 350px;
+
+  @media (max-width: 385px) {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 @media screen and (max-width: 740px) {
   .footer-container {
