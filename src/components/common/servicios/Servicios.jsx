@@ -1,7 +1,7 @@
-import asesoramientoTécnico from "../../../assets/servicios/Atencion-Acesoramiento.png";
-import img2 from "../../../assets/servicios/Trabajos-Personalizados.png";
-import fabricaciónInstalacion from "../../../assets/servicios/Armado-ventanas.png";
-import reparacionMantenimiento from "../../../assets/servicios/reparacion-mantenimiento.png";
+import asesoramientoTécnico from "../../../assets/servicios/atencionAcesoramiento.png";
+import img2 from "../../../assets/servicios/trabajosPersonalizados.png";
+import fabricaciónInstalacion from "../../../assets/servicios/armadoVentanas.png";
+import reparacionMantenimiento from "../../../assets/servicios/ReparacionMantenimiento.png";
 
 const Servicios = () => {
   return (
