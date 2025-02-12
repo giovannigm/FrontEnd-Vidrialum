@@ -1,13 +1,13 @@
-import img1 from "../../../assets/Prueba/b.svg";
-import img2 from "../../../assets/Prueba/a.svg";
-// import img3 from "../../../assets/Prueba/a.svg";
-import img4 from "../../../assets/reparacion-mantenimiento.png";
+import asesoramientoTécnico from "../../../assets/servicios/Atencion-Acesoramiento.png";
+import img2 from "../../../assets/servicios/Trabajos-Personalizados.png";
+import fabricaciónInstalacion from "../../../assets/servicios/Armado-ventanas.png";
+import reparacionMantenimiento from "../../../assets/servicios/reparacion-mantenimiento.png";
 
 const Servicios = () => {
   return (
     <>
       <div className="servicio-ind">
-        <img src={img2} alt="" />
+        <img src={asesoramientoTécnico} alt="" />
         <h3>Asesoramiento técnico</h3>
         <p>
           Te ayudamos a elegir las mejores opciones en ventanas, puertas,
@@ -17,7 +17,7 @@ const Servicios = () => {
         </p>
       </div>
       <div className="servicio-ind">
-        <img src={img1} alt="imagen de Fabricación" />
+        <img src={fabricaciónInstalacion} alt="imagen de Fabricación" />
         <h3>Fabricación e instalación</h3>
         <p>
           Diseñamos e instalamos ventanas de aluminio de todo tipo, cortinas de
@@ -27,7 +27,7 @@ const Servicios = () => {
       </div>
       <div className="servicio-ind">
         <img src={img2} alt="imagen de trabajos personalizados" />
-        <h3>Trabajos personalizados y decoración</h3>
+        <h3>Trabajos Personalizados</h3>
         <p>
           Fabricamos productos a medida, adaptándonos a las necesidades de cada
           cliente. Desde ventanas y mamparas personalizadas hasta puertas con
@@ -36,7 +36,10 @@ const Servicios = () => {
         </p>
       </div>
       <div className="servicio-ind">
-        <img src={img4} alt="imagen de mantenimiento de ventana" />
+        <img
+          src={reparacionMantenimiento}
+          alt="imagen de mantenimiento de ventana"
+        />
         <h3>Reparaciones y mantenimiento</h3>
         <p>
           Ofrecemos mantenimiento y reparación de ventanas de aluminio, cortinas

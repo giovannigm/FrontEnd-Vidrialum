@@ -9,15 +9,20 @@ const apiClient = axios.create({
   },
 });
 
-
 // ####### Servicio para Email #######
 export const emailService = {
-  sendEmail: async (data) => {
+  sendEmail: async (formData) => {
     try {
-      const response = await apiClient.post(`/email`, data);
+      const response = await apiClient.post(`/email`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
       return response;
     } catch (error) {
-      throw new Error(error.response?.data.message || "Error al enviar el email.");
+      throw new Error(
+        error.response?.data?.message || "Error al enviar el email."
+      );
     }
   },
 };

@@ -2,11 +2,9 @@ import React, { useRef, useState } from "react";
 import "./FormEmail.scss";
 import { emailService } from "../../../Api/axiosInstance";
 
-const { VITE_BACKEND } = import.meta.env;
-
 const FormEmail = () => {
   const form = useRef();
-  const [submitText, setSubmitText] = useState("Send");
+  const [submitText, setSubmitText] = useState("enviar");
   const [errorMessage, setErrorMessage] = useState("");
 
   const sendEmail = async (e) => {
@@ -14,51 +12,53 @@ const FormEmail = () => {
 
     const message = form.current.message.value.trim();
     if (message === "") {
-      setErrorMessage("Please enter a non-empty message.");
+      setErrorMessage("Por favor ingrese un mensaje que no esté vacío.");
       return;
     } else {
       setErrorMessage("");
     }
 
-    setSubmitText("Sending...");
+    setSubmitText("Enviando...");
 
+    // Crear FormData correctamente
     const formData = new FormData(form.current);
-    const data = {
-      user_name: formData.get("nombre"),
-      user_email: formData.get("email"),
-      message: formData.get("message"),
-    };
 
     try {
-      const response = await emailService.sendEmail(data);
+      // Enviar el FormData al backend
+      const response = await emailService.sendEmail(formData);
 
       if (response.status === 200) {
-        setSubmitText("Submitted !");
+        setSubmitText("Enviado!");
         setTimeout(() => {
-          setSubmitText("Send");
+          setSubmitText("enviar");
           form.current.reset();
         }, 2000);
       } else {
         console.error("Response status:", response.status);
-        setSubmitText("Send");
-        setErrorMessage("Failed to send message. Please try again.");
+        setSubmitText("enviar");
+        setErrorMessage(
+          "No se pudo enviar el mensaje. Por favor inténtalo de nuevo."
+        );
       }
     } catch (error) {
       console.error("Error:", error);
-      setSubmitText("Send");
-      setErrorMessage("An error occurred. Please try again.");
+      setSubmitText("enviar");
+      setErrorMessage("Se produjo un error. Por favor inténtalo de nuevo.");
     }
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="field">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="field"
+      encType="multipart/form-data"
+    >
       <input
         className="infoContact"
         type="text"
         name="nombre"
-        placeholder="Full Name"
-        pattern=".*\S+.*"
-        title="Please enter a non-empty name"
+        placeholder="Nombre"
         required
       />
       <input
@@ -68,7 +68,8 @@ const FormEmail = () => {
         placeholder="Email"
         required
       />
-      <textarea name="message" placeholder="Enter Your Message" required />
+      <textarea name="message" placeholder="Ingrese su mensaje" required />
+      <input className="fileClass" type="file" name="file" />
       {errorMessage && <p className="error-message">{errorMessage}</p>}
       <input id="btSub" type="submit" value={submitText} />
     </form>
