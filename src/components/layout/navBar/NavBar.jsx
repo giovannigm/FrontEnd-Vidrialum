@@ -14,6 +14,7 @@ const NavBar = () => {
 
   const handleLinkClick = () => {
     setShowMenu(false);
+    window.scrollTo(0, 0); // Desplazar hacia arriba
   };
 
   return (
@@ -34,10 +35,10 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <a href="#About" onClick={handleLinkClick}>
+            <Link to={"/Nosotros"} onClick={handleLinkClick}>
               <FaPeopleCarryBox size={30} /> {/* Es la imagen que aparece alado */}
               Nosotros
-            </a>
+            </Link>
           </li>
           <li>
             <Link to={"/Contacto"} onClick={handleLinkClick}>

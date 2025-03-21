@@ -1,0 +1,66 @@
+.nosotros-container {
+  padding-top: 5%;
+  background: none; /* Removed gray background */
+  border-radius: 12px;
+  // max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  display: grid;
+  justify-items: center;
+}
+
+.titulo {
+  color: #27ae60;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  color: #7f8c8d;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.sections-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  // box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las secciones se envuelvan */
+  justify-content: space-evenly;
+  gap: 20px; /* Add some space between the sections */
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 30%; /* Ensure each section takes 50% of the container */
+  height: 350px;
+  img {
+    width: 35%;
+    height: 25%;
+    border-radius: 8px;
+  }
+}
+
+.section-historia {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 80%; /* Ensure the historia section takes 100% of the container */
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%; /* En pantallas pequeñas, cada sección toma el 100% del ancho */
+  }
+}
