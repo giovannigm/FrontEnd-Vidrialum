@@ -5,8 +5,8 @@ import imgVision from "../../../assets/nosotros/vision.png";
 
 const Nosotros = () => {
   return (
-    <div className="nosotros-container">
-      <h2 className="titulo">Nuestra Historia</h2>
+    <div className="nosotros-container" id="Nosotros-Container">
+      <h2 className="titulo">Nosotros</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.

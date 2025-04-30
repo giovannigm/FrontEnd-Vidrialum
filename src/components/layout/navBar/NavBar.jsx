@@ -35,14 +35,23 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/Nosotros"} onClick={handleLinkClick}>
-              <FaPeopleCarryBox size={30} /> {/* Es la imagen que aparece alado */}
+            <a href="#Nosotros-Container">
+              <FaPeopleCarryBox size={30} />
+              {/* Es la imagen que aparece alado */}
               Nosotros
-            </Link>
+            </a>
+          </li>
+          <li>
+            <a href="#Servicios-Container">
+              <FaPeopleCarryBox size={30} />
+              {/* Es la imagen que aparece alado */}
+              Servicios
+            </a>
           </li>
           <li>
             <Link to={"/Contacto"} onClick={handleLinkClick}>
-              <IoChatbubblesOutline size={30} /> {/* Es la imagen que aparece alado */}
+              <IoChatbubblesOutline size={30} />{" "}
+              {/* Es la imagen que aparece alado */}
               Contacto
             </Link>
           </li>

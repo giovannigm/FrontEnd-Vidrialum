@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/Contacto" element={<Contacto />} />
-            <Route path="/Nosotros" element={<Nosotros/>} />
+            {/* <Route path="/Contacto" element={<Contacto />} /> */}
+            {/* <Route path="/Nosotros" element={<Nosotros/>} /> */}
           </Route>
 
           {/* Manejar ruta no definida */}

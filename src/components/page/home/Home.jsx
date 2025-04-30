@@ -1,4 +1,5 @@
 import ServiciosContainer from "../../common/servicios/ServiciosContainer";
+import Nosotros from "../nosotros/nosotros";
 import "./Home.scss";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
           </svg>
         </div>
       </section>
+      <Nosotros />
       <ServiciosContainer />
     </>
   );
