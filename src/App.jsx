@@ -21,7 +21,7 @@ function App() {
             {/* <Route path="/Nosotros" element={<Nosotros/>} /> */}
           </Route>
 
-          {/* Manejar ruta no definida */}
+          {/* Manejo de ruta no definidas */}
           <Route
             path="*"
             element={
