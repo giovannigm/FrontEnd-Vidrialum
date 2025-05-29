@@ -1,4 +1,5 @@
 import ServiciosContainer from "../../common/servicios/ServiciosContainer";
+import Nosotros from "../../common/nosotros/nosotros";
 import "./Home.scss";
 
 const Home = () => {
@@ -16,12 +17,13 @@ const Home = () => {
           >
             <path
               d="M-14.39,74.50 C262.69,157.39 277.93,23.19 508.17,105.09 L500.00,150.00 L-13.82,162.33 Z"
-              fill="#fff"
-              stroke="none"
+              // fill="#fff"
+              // stroke="none"
             ></path>
           </svg>
         </div>
       </section>
+      <Nosotros />
       <ServiciosContainer />
     </>
   );

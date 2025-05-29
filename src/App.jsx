@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Layout } from "./components/layout/Outlet/Layout";
 import Contacto from "./components/page/contacto/Contacto";
 import Home from "./components/page/home/Home";
-import Nosotros from "./components/page/nosotros/nosotros";
+import Login from "./components/page/login/Login";
 
 function App() {
   return (
@@ -19,14 +19,16 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/Contacto" element={<Contacto />} />
-            <Route path="/Nosotros" element={<Nosotros/>} />
           </Route>
 
-          {/* Manejar ruta no definida */}
+          <Route element={<Layout />}>
+            <Route path="/inicio" element={<Login />} />
+            <Route path="/login" element={<Navigate to="/inicio" replace />} />
+          </Route>
+
           <Route
             path="*"
             element={
-              // <NotFoundContainer />
               <div style={{ paddingTop: "5rem" }}>
                 <p>La página no existe.</p>
               </div>

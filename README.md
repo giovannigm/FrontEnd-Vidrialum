@@ -5,7 +5,6 @@
 - npm install (to install node_modules)
 - npm run dev
 
-
 ### To get conection for Backend working
 - VITE_BACKEND= http://localhost:8000
 

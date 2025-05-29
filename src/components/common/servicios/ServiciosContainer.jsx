@@ -4,8 +4,8 @@ import "./Servicios.scss";
 const ServiciosContainer = () => {
   return (
     <>
-      <article className="ServiciosContainer">
-        <h2 className="tituloServicios">Nuestros servisios</h2>
+      <article className="ServiciosContainer" id="Servicios-Container">
+        <h2 className="tituloServicios">Servicios</h2>
         <div className="servicios-cont">
           <Servicios />
         </div>
