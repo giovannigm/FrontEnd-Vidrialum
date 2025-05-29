@@ -137,14 +137,20 @@ const NavBar = () => {
         <Toolbar sx={{ justifyContent: "space-between", px: 2, minHeight: 48 }}>
           {/* Logo y nombre alineados a la izquierda */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <h1 style={{ color: "white", margin: 0, marginRight: 16 }}>
-              VIDRIALUM
-            </h1>
-            <img
-              src={imgEmpresa}
-              alt="Imagen de empresa"
-              style={{ height: 35, width: 35 }}
-            />
+            <Link
+              to="/"
+              onClick={handleLinkClick}
+              style={{ display: "flex", alignItems: "center", textDecoration: "none" }}
+            >
+              <h1 style={{ color: "white", margin: 0, marginRight: 16 }}>
+                VIDRIALUM
+              </h1>
+              <img
+                src={imgEmpresa}
+                alt="Imagen de empresa"
+                style={{ height: 35, width: 35 }}
+              />
+            </Link>
           </Box>
           {/* Menú desktop y hamburguesa alineados a la derecha */}
           <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
