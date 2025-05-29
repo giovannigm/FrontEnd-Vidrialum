@@ -1,14 +1,15 @@
-# React + Vite
+### Technologies used
+- React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## initialize
+- npm install (to install node_modules)
+- npm run dev
 
-Currently, two official plugins are available:
+### To get conection for Backend working
+- VITE_BACKEND= http://localhost:8000
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Prod:
-https://vidrialum.netlify.app/
+## La rama Main hace auto deploy trabajar en la develop y hacer pull a main 
+Prod: https://vidrialum.netlify.app/
 
-Test:
-https://develop--vidrialum.netlify.app/#Nosotros-Container
+Test: https://develop--vidrialum.netlify.app/#Nosotros-Container
