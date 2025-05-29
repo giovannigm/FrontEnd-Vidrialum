@@ -134,7 +134,7 @@ const NavBar = () => {
         position="fixed"
         sx={{ backgroundColor: "#585858", boxShadow: 0 }}
       >
-        <Toolbar sx={{ justifyContent: "space-between", px: 2 }}>
+        <Toolbar sx={{ justifyContent: "space-between", px: 2, minHeight: 48 }}>
           {/* Logo y nombre alineados a la izquierda */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <h1 style={{ color: "white", margin: 0, marginRight: 16 }}>
