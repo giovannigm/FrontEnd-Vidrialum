@@ -1,66 +1,86 @@
 .nosotros-container {
-  padding-top: 5%;
-  background: none; /* Removed gray background */
-  border-radius: 12px;
-  // max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 2em;
-  display: grid;
-  justify-items: center;
+  padding-top: 48px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  position: relative;
 }
 
 .titulo {
   color: #27ae60;
   font-size: 30px;
-  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-p {
+.nosotros-container > p {
   color: #7f8c8d;
-  font-size: 12px;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  width: 70%;
+  max-width: 1000px;
 }
 
 .sections-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  // box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap; /* Permitir que las secciones se envuelvan */
-  justify-content: space-evenly;
-  gap: 20px; /* Add some space between the sections */
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .section {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
-  width: 30%; /* Ensure each section takes 50% of the container */
-  height: 400px;
-  img {
-    width: 35%;
-    height: 25%;
-    border-radius: 8px;
+  background: linear-gradient(120deg, #e8f6ef 60%, #fff 100%);
+  padding: 24px 18px 18px 18px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(39, 174, 96, 0.06);
+  margin-bottom: 0;
+  width: 48%;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.section h3 {
+  color: #27ae60;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section p {
+  color: #4d5c5c;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.section img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+@media (max-width: 804px) {
+  .sections-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
   }
-}
-
-.section-historia {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 1px 0px 19px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
-  width: 80%; /* Ensure the historia section takes 100% of the container */
-}
-
-@media (max-width: 768px) {
   .section {
-    width: 100%; /* En pantallas pequeñas, cada sección toma el 100% del ancho */
+    width: 90%;
+    min-width: unset;
   }
 }
