@@ -7,7 +7,7 @@ const Nosotros = () => {
   return (
     <div className="nosotros-container" id="Nosotros-Container">
       <h2 className="titulo">Nosotros</h2>
-      <p style={{ width: "65%" }}>
+      <p>
         Vidrialum nació hace más de 20 años con una visión clara: ofrecer
         soluciones integrales en aluminio, vidrio y afines, combinando
         funcionalidad, diseño y calidad. A lo largo de estas dos décadas, hemos

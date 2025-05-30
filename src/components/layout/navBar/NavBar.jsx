@@ -79,7 +79,7 @@ const NavBar = () => {
           right: 0,
           width: 160,
           bgcolor: "#585858",
-          borderRadius: 2,
+          borderRadius: "0px 0px 8px 8px", // Solo esquinas inferiores redondeadas
           boxShadow: 3,
           zIndex: 1201,
         }}

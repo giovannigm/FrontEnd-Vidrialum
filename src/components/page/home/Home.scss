@@ -1,5 +1,6 @@
 .Home {
-  height: calc(100vh);
+  // height: calc(100vh);
+  height: 100vh;
   background-image: url(/src/assets/ventana-mdeo.jpg);
   background-color: rgb(50, 50, 50);
   background-size: cover;
@@ -29,8 +30,8 @@
   }
 }
 
-@media screen and (max-width: 828px) {
-  .Home {
-    height: calc(100vh - 10vh);
-  }
-}
+// @media screen and (max-width: 828px) {
+//   .Home {
+//     height: calc(100vh - 10vh);
+//   }
+// }
