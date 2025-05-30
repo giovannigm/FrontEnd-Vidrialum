@@ -42,6 +42,8 @@ const NavBar = () => {
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+    } else if (location.pathname === "/Contacto") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
 
@@ -140,7 +142,11 @@ const NavBar = () => {
             <Link
               to="/"
               onClick={handleLinkClick}
-              style={{ display: "flex", alignItems: "center", textDecoration: "none" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+              }}
             >
               <h1 style={{ color: "white", margin: 0, marginRight: 16 }}>
                 VIDRIALUM
