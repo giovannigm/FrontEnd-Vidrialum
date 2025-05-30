@@ -1,7 +1,6 @@
 .nosotros-container {
   padding-top: 48px;
   background: none;
-  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,7 @@
 
 .titulo {
   color: #27ae60;
-  font-size: 2.2em;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -21,7 +20,6 @@
 
 .nosotros-container > p {
   color: #7f8c8d;
-  font-size: 1.1em;
   line-height: 1.8;
   margin-bottom: 35px;
   width: 70%;
@@ -56,14 +54,13 @@
 
 .section h3 {
   color: #27ae60;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .section p {
   color: #4d5c5c;
-  font-size: 1em;
   margin-bottom: 18px;
   line-height: 1.7;
 }
