@@ -251,7 +251,7 @@ const NavBar = () => {
               aria-label={showMenu ? "close drawer" : "open drawer"}
               edge="end"
               onClick={handleMenuClick}
-              sx={{ display: { xs: "block", custom805: "none" } }}
+              sx={{ display: { custom805: "none" } }}
             >
               {showMenu ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
