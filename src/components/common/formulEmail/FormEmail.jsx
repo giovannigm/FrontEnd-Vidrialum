@@ -121,7 +121,12 @@ const FormEmail = () => {
           </span>
           <button
             type="button"
-            style={{ border: "none", background: "none", fontSize: "1rem" }}
+            className="file-chip"
+            style={{
+              border: "none",
+              background: "none",
+              fontSize: "1rem",
+            }}
             onClick={removeFile}
           >
             <FaTrash />
