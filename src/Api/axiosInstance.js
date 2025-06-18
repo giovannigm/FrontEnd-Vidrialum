@@ -20,9 +20,7 @@ export const emailService = {
       });
       return response;
     } catch (error) {
-      throw new Error(
-        error.response?.data?.message || "Error al enviar el email."
-      );
+      throw error; // Deja pasar el error original para manejarlo en el frontend
     }
   },
 };

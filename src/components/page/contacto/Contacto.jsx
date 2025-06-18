@@ -3,7 +3,7 @@ import "./Contacto.scss";
 const Contacto = () => {
   return (
     <section className="Contacto-container">
-      <h1>Contáctanos</h1>
+      <h1 className="titulo" style={{fontSize: 25}}>Ponete en contácto</h1>
       <FormEmail/>
     </section>
   );
